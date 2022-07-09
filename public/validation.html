@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+        #userName+div{
+            display: none;
+        }
+        #userName:invalid+div{
+            display:block;
+        }
+        #mobile:valid+div{
+            display: none;
+        }
+        #mobile:invalid+div{
+            display: block;
+        }
+        #mobile:invalid{
+            border:1px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        #Age:in-range+div{
+        display: none;
+        }
+        #Age:out-of-range+div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" required id="User Name">
+        <div style="color:red">User Name Required</div></dd>
+        <dt>Mobile</dt>
+        <dd>
+            <input type="text" id="Mobile" pattern="\+91\d{10}">
+            <div style="color: red;">Mobile Invalid</div>
+        </dd>
+        <dt>Age</dt>
+        <dd>
+            <input type="number" min="15" max="30" id="Age">
+            <div style="color:red;">Age 15 to 30 Only</div>
+        </dd>
+    </dl>
+</body>
+</html>

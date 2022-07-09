@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        meter {
+            width: 50%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body class="container">
+   <form name="frmRegister" class="border w-50 border-4 border-danger p-4">
+      <h2>Register User</h2>
+      <div class="mb-4">
+         <label class="form-label" for="UserName">User Name</label>
+         <div>
+            <input type="text" class="form-control" name="UserName">
+            <div>
+                <span class="text-danger">User Name Required</span>
+            </div>
+         </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label" for="Password">Password</label>
+        <div>
+            <input type="password" class="form-control" name="Password">
+            <div>
+                <span class="text-warning">4 to 10 Chars</span>
+            </div>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="form-label" for="City">Select Your City</label>
+        <div>
+            <select class="form-select">
+                <option>Delhi</option>
+                <option>Hyd</option>
+            </select>
+        </div>
+      </div>
+      <div class="mb-4">
+         <label class="form-label" for="terms">Accept Terms</label>
+         <div class="form-switch">
+            <input type="checkbox" class="form-check-input"> <label class="form-check-label">I Accept</label>
+         </div>
+      </div>
+      <div class="mb-4">
+         <button class="btn btn-danger w-100">Register</button>
+      </div>
+   </form>
+</body>
+</html>

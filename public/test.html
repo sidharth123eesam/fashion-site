@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>bootstrap css</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        meter{
+            width: 50%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body class="container">
+    <form name="frmRegister" class="border w-50 border-4 border-danger p-4">
+        <h2>Create Account</h2>
+        <div class="mb-4">
+            <label class="form-label" for="Your name">Your name</label>
+            <div>
+                <input type="text" size="40" placeholder="Enter your name" class="form-control" name="Your name">
+                
+            </div>
+        </div>
+        <div mb-4>
+            <label class="form-label" for="Mobile number">Mobile number</label>
+            <div>
+                <input type="text" size="40" placeholder="Enter mobile number" name="Mobilenumber">
+            </div>
+        </div>
+        <br>
+        <div class="mb-4">
+            <label class="form-control" for="Email(optional)">Email (optional)</label>
+            <div>
+                <input type="text" placeholder="Enter emailaddress" size="40">
+            </div>
+        </div>
+        <div mb-b>
+            <label class="form-label" for="Password">Password</label>
+            <div>
+                <input type="password" size="40" class="fprm-control" name="Password" placeholder="at lest 6 characters">
+                <div>
+                    <span>Password must be at least 6 characters</span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>We will send you a text to verify your phone.
+            </div>
+            <div>
+                Message and Data rates may apply.</div>
+                <br>
+          <div class="mb-4">
+            <button class="btn-btn-warning w-100">Continue</button>
+          </div>      
+    </form>
+    
+</body>
+</html>
