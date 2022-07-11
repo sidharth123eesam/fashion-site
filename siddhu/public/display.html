@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,section,nav,aside,footer{
+            border: 2px solid grey;
+            padding: 5px;
+        }
+        section{
+            height: 400px;
+        }
+        .container{
+            display: grid;
+        grid-template-columns: 3fr 6fr 3fr;
+        grid-gap: 20px;
+        background-color: orange;
+        }
+        header{
+            grid-row:1;
+            grid-column: 1/4;
+            background-color: aqua;
+        }
+        section{
+            grid-row: 3;
+            grid-column: 1/4;
+            background-color: red;
+        }
+        nav{
+            grid-row: 3;
+            grid-column: 1;
+            background-color: blue;
+        }
+        aside{
+            grid-row: 2;
+            grid-column: 1/4;
+            background-color: blanchedalmond;
+        }
+        main{
+            grid-row: 3;
+            grid-column: 2/4;
+            background-color: yellow;
+        }
+        footer{
+            grid-row: 4;
+            grid-column: 1/4;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>Flipkart</h1>
+    </header>
+    <section>
+        section
+    </section>
+    <nav>
+        navigation
+    </nav>
+    <aside>
+        advertisement
+    </aside>
+    <footer>
+        &copyr:copyright 1996-2022
+    </footer>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        input+div{
+            display: None;
+        }
+        input:read-only{
+            background-color: darkred;
+            color: white;
+        }
+        input:read-only+div{
+            display: block;
+        }
+        button:disabled{
+            border:None;
+            background-color: darkblue;
+            cursor: allowed;
+        }
+        .terms:checked+span{
+            color:green;
+        }
+        .terms+span{
+            color: red;
+        }
+        #pan+div{
+            display:None;
+        }
+        #pan:focus+div{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>PAN card number</dt>
+        <dd>
+            <input type="text"id="pan">
+            <div>PAN in Block Letters Only</div>
+        </dd>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text"readonly value="Jhone" >
+            <div>Name is readonly</div>
+        </dd>
+        <dt>Terms of Service</dt>
+        <dd>
+            <input type="checkbox" class="terms"><span>I Accept</span>
+        </dd>
+    </dl>
+    <button disabled>Submit</button>
+</body>
+</html>

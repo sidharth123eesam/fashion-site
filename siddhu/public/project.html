@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+       .nav-brand{
+        font-size: 24px;
+        font-family: arial;
+        font-weight: bold;
+       }
+       .nav-items{
+        font-size: 20px;
+        font-family: arial;
+        font-weight: bold;
+       }
+       .nav-items span{
+        margin-right: 15px;
+       }
+       header{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 5px 5px 10px grey;
+        padding: 30px;
+       }
+       .title{
+        font-size: 24px;
+        font-family: arial;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        padding: 30px;
+        text-align: center;
+
+       }
+       .banner-women{
+        background-image: url(./womwn.jpg);
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .banner-men{
+        background-image: url(../public/men.jpg);
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .banner-kids{
+        background-image: url(./kids.webp);
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .brand-banner{
+        display: flex;
+        
+       }
+       .fot{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+       
+       }
+       body{
+        @media screen and{orientation:potrait;
+            
+        }
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-brand">
+            Shopper.
+        </div>
+        <div class="nav-items">
+            <span>Home</span>
+            <span>Catlog</span>
+            <span>Shop</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </div>
+        <div class="nav-toolbar">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </header>
+    <div class="title">HAPPY HOLIDAY DEALS ON EVERYTHING</div>
+    <div class="brand-banner">
+        <div class="banner-women">
+            <div>
+                <h1>Women</h1>
+            </div>
+            <div>
+                <button>Shop Women
+                    <span class="bi bi-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="banner-men">
+            <div>
+                <h1> Men</h1>
+            </div>
+            <div>
+                <button>shop Men<span class="bi bi-arrow-right"></span></button>
+            </div>
+        </div>
+        <div class="banner-kids">
+            <div><h1>Kids</h1></div>
+            <div>
+                <button>Shop Kids<span class="bi bi-arrow-right"></span></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="fot">
+        <div><span class="bi bi-truck">    FREE SHIPPING</span></div>
+       <div> <span class="bi bi-recycle">FREE RETURN</span></div>
+<div>        <span class="bi bi-lock">SECURE SHOPPING</span></div>
+ <div>       <span class="bi bi-tag">OVER 10,000 STYLES</span></div>
+        
+      
+    </div>
+</body>
+</html>

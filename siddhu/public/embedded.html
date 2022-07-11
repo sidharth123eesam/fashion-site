@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Embedded style</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.css">
+        <style>
+         
+        </style>
+    </head>
+    <body class="container">
+        <h2>Create Account</h2>
+<form>
+    <dl>
+        <dt>Your name</dt>
+        <dd>
+            <input type="text" placeholder="First and last name" size="40">
+        </dd>
+        <dt>Mobile number</dt>
+        <dd>
+            <input type="text" pattern="/+91/d{10}" placeholder="Mobile number" size="40">
+        </dd>
+        <dt>Email(optional)</dt>
+        <dd>
+            <input type="text" size="40">
+        </dd>
+        <dt>Password</dt>
+        <dd>
+            <input type="text" pattern="password" placeholder="At least 6 characters" size="40">
+            <div>Password must be at lest 6 characters </div>
+            <br>
+            <div>We will send you a text to verify your phone.</div>
+               <div> message and data rate may apply.</div>
+             
+        </dd>
+
+    </dl>
+    <button class="btn-btn-danger w-100">continue</button>
+</form>
+</body>
+</html>
