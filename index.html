@@ -1,42 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>2d</title>
-        <style>
-            .container{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 500px;
-            }
-            img{
-                transform: scale3d(1,1,1);
-                transition-duration: 4s;
-            }
-            img:hover{
-                transform: scale3d(2,2,3);
-                box-shadow: 24px 24px 20px;
-                transition-duration: 4s;
-                
-            }
-            marquee{
-                padding: 300px;
-            }
-            img{
-                margin-right: 200px;
-            }
-                
+        <title>My profile</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/ bootstrap.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-        </style>
+<style>
+    header{
+        border: 1px solid grey;
+        box-shadow: 2px 2px 2px grey;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color:  white;
+    }
+    .title{
+        font-weight: bold;
+        font-family: Arial;
+        font-size: 30px;
+    }
+    .nav-bar{
+        display: flex;
+    }
+    .nav-bar div{
+        margin-right: 30px;
+        font-size: 20px;
+        font-family: arial;
+        font-weight: bold;
+    }
+    .banner{
+        margin-top: 5px;
+        box-shadow: 2px 2px 2px grey;
+        background-image: url(./public/bg.jpg);
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .side-panel{
+        font-size: 30px;
+        font-family: arial;
+        text-align: center;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        height: 500px;
+        padding: 20px;
+    }
+    
+</style>
     </head>
-    <body>
- <div class="container">  
-    <marquee scrollamount="5"> <img src="./public/download.jfif">
-     <img src="./public/thor.jfif">
-    <img src="./public/spydi.jfif">
-<img src="./public/cap.jfif">
-<img src="./public/hulk.jfif">
-<img src="./public/balck.jfif"></marquee>
-</div>
+    <body class="container-fluid">
+        <header>
+            <div class="title">
+                PORTFOLIO
+            </div>
+            <div class="nav-bar">
+                <div>Home</div>
+                <div>About</div>
+                <div>My Projects</div>
+                <div>Contact</div>
+                <div>Services</div>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="side-panel">
+                <div>
+                    <h1>IAM A WEB DESIGNER</h1>
+                    <p>I'm a web designer,<p>I was completed my course on web development </p>
+                    <p>And web designing here my project you can check here<button>see</button></p>
+                    <div>
+                        <button class="btn-btn-danger">sign-in</button>
+                        <button class="btn-btn-warning">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
